@@ -24,3 +24,28 @@ This repository contains the necessary configuration files and startup script to
 Simply double-click start_bridge.bat!
 
 It will boot up the LiteLLM proxy server on port 4000. You can then configure your AI applications to point to http://127.0.0.1:4000 to utilize the proxy.
+
+## DuckDuckGo Web Search (MCP Server)
+
+I have also included ddg_mcp.py, a custom Model Context Protocol (MCP) server that grants your Claude Desktop or Claude Code the ability to search the web using DuckDuckGo! It is 100% free and requires no API keys.
+
+### How to install:
+1. Open your terminal and install the required dependencies:
+   pip install mcp duckduckgo-search
+
+2. Open your Claude Desktop configuration file (%APPDATA%\Claude\claude_desktop_config.json).
+3. Add the following to your mcpServers list (make sure to replace C:\\path\\to\\this\\folder with the actual path to this folder!):
+
+`json
+{
+  "mcpServers": {
+    "duckduckgo-search": {
+      "command": "python",
+      "args": [
+        "C:\\path\\to\\this\\folder\\ddg_mcp.py"
+      ]
+    }
+  }
+}
+`
+4. Restart Claude Desktop. You will now see the Tools icon allowing the model to search the web!
