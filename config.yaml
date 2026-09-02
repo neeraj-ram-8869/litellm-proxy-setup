@@ -3,7 +3,7 @@ litellm_settings:
 model_list:
 - litellm_params:
     api_key: os.environ/NVIDIA_NIM_API_KEY
-    model: nvidia_nim/minimaxai/minimax-m3
+    model: nvidia_nim/nvidia/nemotron-3-ultra-550b-a55b
     thinking:
       budget_tokens: 2048
       type: enabled
@@ -13,5 +13,5 @@ model_list:
   model_name: claude-opus-4.8-20260528
 - litellm_params:
     api_key: os.environ/NVIDIA_NIM_API_KEY
-    model: nvidia_nim/nvidia/llama-3.1-nemotron-70b-instruct
+    model: nvidia_nim/nvidia/nemotron-3-super-120b-a12b
   model_name: claude-3-5-sonnet-20241022
