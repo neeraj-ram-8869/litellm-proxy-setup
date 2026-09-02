@@ -3,7 +3,10 @@ litellm_settings:
 model_list:
 - litellm_params:
     api_key: os.environ/NVIDIA_NIM_API_KEY
-    model: nvidia_nim/nvidia/nemotron-3-super-120b-a12b
+    model: nvidia_nim/minimaxai/minimax-m3
+    thinking:
+      budget_tokens: 2048
+      type: enabled
   model_info:
     max_input_tokens: 1000000
     max_tokens: 1000000
