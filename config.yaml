@@ -13,5 +13,5 @@ model_list:
   model_name: claude-opus-4.8-20260528
 - litellm_params:
     api_key: os.environ/NVIDIA_NIM_API_KEY
-    model: nvidia_nim/meta/llama-3.3-70b-instruct
+    model: nvidia_nim/nvidia/llama-3.1-nemotron-70b-instruct
   model_name: claude-3-5-sonnet-20241022
