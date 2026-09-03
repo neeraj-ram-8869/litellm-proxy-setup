@@ -4,9 +4,6 @@ model_list:
 - litellm_params:
     api_key: os.environ/NVIDIA_NIM_API_KEY
     model: nvidia_nim/nvidia/nemotron-3-ultra-550b-a55b
-    system_prompt: You are a highly advanced reasoning model. Before providing your
-      final answer to the user, you MUST write your step-by-step logical reasoning
-      inside <think>...</think> tags. Do not skip this step.
   model_info:
     max_input_tokens: 1000000
     max_tokens: 1000000
@@ -14,7 +11,4 @@ model_list:
 - litellm_params:
     api_key: os.environ/NVIDIA_NIM_API_KEY
     model: nvidia_nim/nvidia/nemotron-3-super-120b-a12b
-    system_prompt: You are a highly advanced reasoning model. Before providing your
-      final answer to the user, you MUST write your step-by-step logical reasoning
-      inside <think>...</think> tags. Do not skip this step.
   model_name: claude-3-5-sonnet-20241022
