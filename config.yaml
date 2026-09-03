@@ -2,13 +2,13 @@ litellm_settings:
   drop_params: true
 model_list:
 - litellm_params:
-    api_key: os.environ/NVIDIA_NIM_API_KEY
-    model: nvidia_nim/nvidia/nemotron-3-ultra-550b-a55b
-  model_info:
-    max_input_tokens: 1000000
-    max_tokens: 1000000
-  model_name: claude-opus-4.8-20260528
-- litellm_params:
-    api_key: os.environ/NVIDIA_NIM_API_KEY
-    model: nvidia_nim/nvidia/nemotron-3-super-120b-a12b
+    api_key: os.environ/OPENROUTER_API_KEY
+    model: openrouter/anthropic/claude-3.5-sonnet
   model_name: claude-3-5-sonnet-20241022
+- litellm_params:
+    api_key: os.environ/OPENROUTER_API_KEY
+    model: openrouter/anthropic/claude-3-opus
+  model_info:
+    max_input_tokens: 200000
+    max_tokens: 4096
+  model_name: claude-opus-4.8-20260528
