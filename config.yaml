@@ -3,11 +3,11 @@ litellm_settings:
 model_list:
 - litellm_params:
     api_key: os.environ/OPENROUTER_API_KEY
-    model: openrouter/anthropic/claude-3.5-sonnet
+    model: openrouter/minimax/minimax-m3:free
   model_name: claude-3-5-sonnet-20241022
 - litellm_params:
     api_key: os.environ/OPENROUTER_API_KEY
-    model: openrouter/anthropic/claude-3-opus
+    model: openrouter/minimax/minimax-m3:free
   model_info:
     max_input_tokens: 200000
     max_tokens: 4096
